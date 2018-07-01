@@ -42,3 +42,17 @@ const smallestDivisor = (n) =>{  // императивный итеративн�
   }
 
 }
+
+const isPrime = (number) => { // Проверка числа, является ли простым, кроме 1 
+  if (number < 2) {
+    return false;
+  }
+
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
